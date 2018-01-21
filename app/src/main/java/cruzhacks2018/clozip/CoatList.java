@@ -3,14 +3,11 @@ package cruzhacks2018.clozip;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ExistingOutfits extends AppCompatActivity {
-    OutfitManager g;
+public class CoatList extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_existing_outfits);
-
-        g = (OutfitManager)getApplication();
+        setContentView(R.layout.activity_coat_list);
     }
 }

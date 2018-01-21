@@ -83,8 +83,8 @@ public class ClozipMenu extends AppCompatActivity
 
         if (id == R.id.nav_newOutfit) {
             startActivity(new Intent(ClozipMenu.this, ChooseOutfit.class));
-        } else if (id == R.id.nav_existingOutfits) {
-
+        } else if (id == R.id.nav_outfitList) {
+            startActivity(new Intent(ClozipMenu.this, OutfitList.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

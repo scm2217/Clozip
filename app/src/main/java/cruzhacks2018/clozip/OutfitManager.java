@@ -1,5 +1,7 @@
 package cruzhacks2018.clozip;
 
+import android.app.Application;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -7,15 +9,34 @@ import java.util.Map;
  * Created by smend on 1/20/2018.
  */
 
-public class OutfitManager {
+public class OutfitManager extends Application {
     Map<String, Outfit> outfits;
     Weather weather;
+
+    public Clothing currentClothing;
+    public Outfit currentOutfit;
+    public Pants currentPant;
+    public Shirt currentShirt;
+    public Coat currentCoat;
 
     private int totalOutfitsUsed;
 
     public OutfitManager(){
         this.outfits = new HashMap<String, Outfit>();
         this.weather = new Weather();
+    }
+
+    //used to keep track of selected clothing between menus
+    public void updateSelection(){
+        char type = currentClothing.GetId().charAt(0);
+        switch(type){
+            case 'p':   this.currentPant = (Pants)currentClothing;
+                        break;
+            case 's':   this.currentShirt = (Shirt)currentClothing;
+                        break;
+            case 'c':   this.currentCoat = (Coat)currentClothing;
+                        break;
+        }
     }
 
     //Either find or create selected outfit combination (coat optional overloaded option)

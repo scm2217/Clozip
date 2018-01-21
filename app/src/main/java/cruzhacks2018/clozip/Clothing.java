@@ -10,6 +10,10 @@ public abstract class Clothing {
 
     public String type;
     public String color;
+    //stub since weather not completely implemented
+    public String weather = "Any";
+    //decided by child classes
+    public Object size;
 
     public Clothing(String type, String color){
         this.type = type;

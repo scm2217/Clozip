@@ -9,7 +9,7 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="Create Outfit" />
         <item
-            android:id="@+id/nav_existingOutfits"
+            android:id="@+id/nav_outfitList"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Existing Outfits" />
     </group>

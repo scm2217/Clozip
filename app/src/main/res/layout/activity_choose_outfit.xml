@@ -6,36 +6,69 @@
     android:layout_height="match_parent"
     tools:context="cruzhacks2018.clozip.ChooseOutfit">
 
-    <Button
-        android:id="@+id/shirt"
-        android:layout_width="309dp"
-        android:layout_height="123dp"
-        android:text="shirt"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="194dp" />
-
-    <Button
+    <ImageButton
         android:id="@+id/pants"
-        android:layout_width="309dp"
-        android:layout_height="123dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
-        android:text="pants"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shirt"
-        app:layout_constraintVertical_bias="0.49"
-        tools:layout_editor_absoluteX="38dp" />
-
-    <Button
-        android:id="@+id/jacket"
-        android:layout_width="309dp"
-        android:layout_height="123dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
-        android:text="jacket"
-        app:layout_constraintBottom_toTopOf="@+id/shirt"
+        android:layout_width="170dp"
+        android:layout_height="121dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="352dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.527"
-        tools:layout_editor_absoluteX="38dp" />
+        app:srcCompat="@android:color/darker_gray" />
 
+    <ImageButton
+        android:id="@+id/shirt"
+        android:layout_width="170dp"
+        android:layout_height="121dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="192dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/darker_gray" />
+
+    <ImageButton
+        android:id="@+id/jacket"
+        android:layout_width="170dp"
+        android:layout_height="121dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="158dp"
+        android:layout_height="27dp"
+        android:text="pants"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="158dp"
+        android:layout_height="29dp"
+        android:text="shirt"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="158dp"
+        android:layout_height="30dp"
+        android:text="Jacket (optional)"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="81dp" />
 </android.support.constraint.ConstraintLayout>

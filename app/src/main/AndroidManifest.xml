@@ -3,6 +3,7 @@
     package="cruzhacks2018.clozip">
 
     <application
+        android:name=".OutfitManager"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -21,7 +22,11 @@
         </activity>
         <activity android:name=".ChooseOutfit" />
         <activity android:name=".ExistingOutfits" />
-        <activity android:name=".ClothingInformation"></activity>
+        <activity android:name=".ClothingInformation" />
+        <activity android:name=".OutfitList" />
+        <activity android:name=".PantsList" />
+        <activity android:name=".ShirtList" />
+        <activity android:name=".CoatList"></activity>
     </application>
 
 </manifest>
