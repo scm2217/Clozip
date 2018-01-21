@@ -7,30 +7,30 @@
     tools:context="cruzhacks2018.clozip.CoatList">
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/cb1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:layout_marginTop="20dp"
         android:text="choose"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+        app:layout_constraintTop_toBottomOf="@+id/c1" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/cb3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:text="choose"
-        app:layout_constraintEnd_toStartOf="@+id/button12"
+        app:layout_constraintEnd_toStartOf="@+id/cb4"
         app:layout_constraintHorizontal_bias="0.243"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+        app:layout_constraintTop_toBottomOf="@+id/c3" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/cb2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -39,21 +39,21 @@
         android:text="choose"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.695"
-        app:layout_constraintStart_toEndOf="@+id/button9"
-        app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+        app:layout_constraintStart_toEndOf="@+id/cb1"
+        app:layout_constraintTop_toBottomOf="@+id/c2" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/cb4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="44dp"
         android:layout_marginTop="12dp"
         android:text="choose"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+        app:layout_constraintTop_toBottomOf="@+id/c4" />
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/c1"
         android:layout_width="106dp"
         android:layout_height="112dp"
         android:layout_marginStart="32dp"
@@ -63,7 +63,7 @@
         app:srcCompat="@drawable/coat1" />
 
     <ImageView
-        android:id="@+id/imageView15"
+        android:id="@+id/c2"
         android:layout_width="107dp"
         android:layout_height="117dp"
         android:layout_marginEnd="36dp"
@@ -73,7 +73,7 @@
         app:srcCompat="@drawable/coat2" />
 
     <ImageView
-        android:id="@+id/imageView16"
+        android:id="@+id/c3"
         android:layout_width="110dp"
         android:layout_height="115dp"
         android:layout_marginBottom="124dp"
@@ -83,7 +83,7 @@
         app:srcCompat="@drawable/coat3" />
 
     <ImageView
-        android:id="@+id/imageView17"
+        android:id="@+id/c4"
         android:layout_width="115dp"
         android:layout_height="116dp"
         android:layout_marginBottom="120dp"

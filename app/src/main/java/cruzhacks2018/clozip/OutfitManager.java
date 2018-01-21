@@ -1,6 +1,7 @@
 package cruzhacks2018.clozip;
 
 import android.app.Application;
+import android.util.Log;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,19 +12,28 @@ import java.util.Map;
 
 public class OutfitManager extends Application {
     Map<String, Outfit> outfits;
+    Map<String, Pants> pants;
+    Map<String, Shirt> shirts;
+    Map<String, Coat> coats;
     Weather weather;
 
-    public Clothing currentClothing;
-    public Outfit currentOutfit;
-    public Pants currentPant;
-    public Shirt currentShirt;
-    public Coat currentCoat;
+    public Clothing currentClothing = null;
+    public Outfit currentOutfit = null;
+    public Pants currentPant = null;
+    public Shirt currentShirt = null;
+    public Coat currentCoat = null;
 
     private int totalOutfitsUsed;
 
     public OutfitManager(){
         this.outfits = new HashMap<String, Outfit>();
+        this.pants = new HashMap<String, Pants>();
+        this.shirts = new HashMap<String, Shirt>();
+        this.coats = new HashMap<String, Coat>();
         this.weather = new Weather();
+        TestGen gen = new TestGen(this);
+        gen.Run();
+        Log.d("TEST", pants.toString());
     }
 
     //used to keep track of selected clothing between menus
@@ -40,19 +50,35 @@ public class OutfitManager extends Application {
     }
 
     //Either find or create selected outfit combination (coat optional overloaded option)
-    public Outfit PickOutfit(Pants pants, Shirt shirt){
-        String outfitId = pants.GetId() + shirt.GetId();
+    public boolean PickOutfit(){
+        //fail to pick outfit if no shirt or pants
+        if(currentPant == null || currentShirt == null){
+            return false;
+        }
+
+        String outfitId = currentPant.GetId() + currentShirt.GetId();
+        if(currentCoat != null){
+            outfitId += currentCoat.GetId();
+        }
+
         Outfit outfit;
         if(this.outfits.containsKey(outfitId)){
             outfit = outfits.get(outfitId);
         }
         else{
-            outfit = new Outfit(pants, shirt);
+            if(currentCoat != null){
+                outfit = new Outfit(currentPant, currentShirt, currentCoat);
+            }
+            else {
+                outfit = new Outfit(currentPant, currentShirt);
+            }
             this.outfits.put(outfitId, outfit);
         }
-        return outfit;
+        currentOutfit = outfit;
+        return true;
     }
 
+    /* outdated code
     public Outfit PickOutfit(Pants pants, Shirt shirt, Coat coat){
         String outfitId = pants.GetId() + shirt.GetId() + coat.GetId();
         Outfit outfit;
@@ -65,10 +91,11 @@ public class OutfitManager extends Application {
         }
         return outfit;
     }
+    */
 
     //retrieves outfit and updates statistics
-    public boolean CheckoutOutfit(Outfit outfit){
-        outfit.UpdateUsageStatistics(Weather.isRain, Weather.tempF);
+    public boolean CheckoutOutfit(){
+        currentOutfit.UpdateUsageStatistics(Weather.isRain, Weather.tempF);
         this.totalOutfitsUsed++;
 
         //return true if no problems retrieving outfit

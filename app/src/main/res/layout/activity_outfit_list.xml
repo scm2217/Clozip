@@ -7,17 +7,17 @@
     tools:context="cruzhacks2018.clozip.OutfitList">
 
     <ImageView
-        android:id="@+id/imageView18"
+        android:id="@+id/obs1"
         android:layout_width="85dp"
         android:layout_height="84dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView19"
+        app:layout_constraintBottom_toTopOf="@+id/obp1"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/shirt" />
 
     <ImageView
-        android:id="@+id/imageView19"
+        android:id="@+id/obp1"
         android:layout_width="86dp"
         android:layout_height="86dp"
         android:layout_marginBottom="236dp"
@@ -27,70 +27,70 @@
         app:srcCompat="@drawable/pants" />
 
     <ImageView
-        android:id="@+id/imageView20"
+        android:id="@+id/obc1"
         android:layout_width="86dp"
         android:layout_height="87dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView18"
+        app:layout_constraintBottom_toTopOf="@+id/obs1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/jacket" />
 
     <ImageView
-        android:id="@+id/imageView21"
+        android:id="@+id/obc2"
         android:layout_width="83dp"
         android:layout_height="87dp"
         android:layout_marginBottom="4dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView23"
-        app:layout_constraintEnd_toStartOf="@+id/imageView24"
-        app:layout_constraintStart_toEndOf="@+id/imageView20"
+        app:layout_constraintBottom_toTopOf="@+id/obs2"
+        app:layout_constraintEnd_toStartOf="@+id/obs3"
+        app:layout_constraintStart_toEndOf="@+id/obc1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/coat2" />
 
     <ImageView
-        android:id="@+id/imageView22"
+        android:id="@+id/obp2"
         android:layout_width="89dp"
         android:layout_height="86dp"
         android:layout_marginBottom="244dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginStart="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView25"
+        app:layout_constraintEnd_toStartOf="@+id/obp3"
         app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintStart_toEndOf="@+id/obp1"
         app:srcCompat="@drawable/pants3" />
 
     <ImageView
-        android:id="@+id/imageView23"
+        android:id="@+id/obs2"
         android:layout_width="86dp"
         android:layout_height="86dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginStart="28dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView22"
-        app:layout_constraintEnd_toStartOf="@+id/imageView24"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toEndOf="@+id/imageView18"
+        app:layout_constraintBottom_toTopOf="@+id/obp2"
+        app:layout_constraintEnd_toStartOf="@+id/obs3"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toEndOf="@+id/obs1"
         app:srcCompat="@drawable/shirt1" />
 
     <ImageView
-        android:id="@+id/imageView24"
+        android:id="@+id/obs3"
         android:layout_width="83dp"
         android:layout_height="80dp"
         android:layout_marginBottom="4dp"
         android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView25"
+        app:layout_constraintBottom_toTopOf="@+id/obp3"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/shirt4" />
 
     <ImageView
-        android:id="@+id/imageView25"
+        android:id="@+id/obp3"
         android:layout_width="85dp"
         android:layout_height="86dp"
         android:layout_marginBottom="240dp"
@@ -100,7 +100,7 @@
         app:srcCompat="@drawable/pants2" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/ob1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="136dp"
@@ -110,7 +110,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/ob2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="136dp"
@@ -118,11 +118,11 @@
         android:layout_marginStart="8dp"
         android:text="outfit2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button15"
-        app:layout_constraintStart_toEndOf="@+id/button13" />
+        app:layout_constraintEnd_toStartOf="@+id/ob3"
+        app:layout_constraintStart_toEndOf="@+id/ob1" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/ob3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="136dp"
@@ -130,4 +130,20 @@
         android:text="outfit3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/obc3"
+        android:layout_width="70dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/obs3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toEndOf="@+id/obc2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/coat4" />
 </android.support.constraint.ConstraintLayout>

@@ -18,20 +18,22 @@ public class ChooseOutfit extends AppCompatActivity {
 
         ImageButton pantButton = findViewById(R.id.pants);
         ImageButton shirtButton = findViewById(R.id.shirt);
-        ImageButton coatButton = findViewById(R.id.jacket);
+        ImageButton coatButton = findViewById(R.id.coatButt);
+        ImageButton confirmButton = findViewById(R.id.confirmSelection);
         pantButton.setOnClickListener(onClickListener);
         shirtButton.setOnClickListener(onClickListener);
         coatButton.setOnClickListener(onClickListener);
+        confirmButton.setOnClickListener(onClickListener);
 
 
         if (g.currentPant != null) {
-
+            pantButton.setImageResource(g.currentPant.image);
         }
         if (g.currentShirt != null) {
-
+            shirtButton.setImageResource(g.currentShirt.image);
         }
         if (g.currentCoat != null) {
-
+            coatButton.setImageResource(g.currentCoat.image);
         }
     }
 
@@ -45,9 +47,13 @@ public class ChooseOutfit extends AppCompatActivity {
                 case R.id.shirt:
                     startActivity(new Intent(ChooseOutfit.this, ShirtList.class));
                     break;
-                case R.id.jacket:
+                case R.id.coatButt:
                     startActivity(new Intent(ChooseOutfit.this, CoatList.class));
                     break;
+                case R.id.confirmSelection:
+                    if(g.PickOutfit()){
+                        startActivity(new Intent(ChooseOutfit.this, ExistingOutfits.class));
+                    }
             }
 
         }

@@ -10,6 +10,7 @@ public abstract class Clothing {
 
     public String type;
     public String color;
+    public int image;
     //stub since weather not completely implemented
     public String weather = "Any";
     //decided by child classes

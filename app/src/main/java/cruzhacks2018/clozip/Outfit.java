@@ -11,7 +11,9 @@ public class Outfit {
 
     public int pickCount = 0;
     public int rainPickCount = 0;
-    public double avgTemp = 0;
+    public double avgTemp = 60.0;
+
+    String weatherInfo;
 
     public Outfit(Pants pants, Shirt shirt){
         this.pants = pants;
@@ -29,5 +31,7 @@ public class Outfit {
         if (isRain) {
             rainPickCount++;
         }
+
+        weatherInfo = Double.toString(avgTemp) + "F : " + ((rainPickCount/pickCount > 0.5) ? "Rain" : "Dry");
     }
 }

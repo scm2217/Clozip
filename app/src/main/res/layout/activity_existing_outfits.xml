@@ -7,7 +7,7 @@
     tools:context="cruzhacks2018.clozip.ExistingOutfits">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/coatOutfit"
         android:layout_width="113dp"
         android:layout_height="112dp"
         android:layout_marginStart="16dp"
@@ -17,20 +17,20 @@
         app:srcCompat="@drawable/jacket" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/shirtOutfit"
         android:layout_width="112dp"
         android:layout_height="112dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/pantOutfit"
         app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/coatOutfit"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/shirt" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/pantOutfit"
         android:layout_width="112dp"
         android:layout_height="112dp"
         android:layout_marginEnd="16dp"
@@ -40,7 +40,7 @@
         app:srcCompat="@drawable/pants" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/cancelOutfit"
         android:layout_width="63dp"
         android:layout_height="57dp"
         android:layout_marginBottom="8dp"
@@ -50,7 +50,7 @@
         app:srcCompat="@android:drawable/btn_dialog" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/checkoutOutfit"
         android:layout_width="68dp"
         android:layout_height="59dp"
         android:layout_marginBottom="8dp"
@@ -60,7 +60,7 @@
         app:srcCompat="@android:drawable/checkbox_on_background" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/weatherUsage"
         android:layout_width="171dp"
         android:layout_height="72dp"
         android:layout_marginBottom="88dp"
@@ -74,18 +74,18 @@
         android:layout_height="72dp"
         android:layout_marginBottom="88dp"
         android:layout_marginStart="8dp"
-        android:text="times used in warm weather"
+        android:text="weather usage"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/totalPop"
         android:layout_width="171dp"
         android:layout_height="72dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/weatherUsage"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
@@ -111,12 +111,12 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/timesUsed"
         android:layout_width="171dp"
         android:layout_height="72dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/totalPop"
         app:layout_constraintEnd_toEndOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

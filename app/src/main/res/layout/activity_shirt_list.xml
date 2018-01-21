@@ -7,7 +7,7 @@
     tools:context="cruzhacks2018.clozip.ShirtList">
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/s1"
         android:layout_width="118dp"
         android:layout_height="116dp"
         android:layout_marginStart="32dp"
@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/shirt" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/s2"
         android:layout_width="116dp"
         android:layout_height="115dp"
         android:layout_marginEnd="36dp"
@@ -27,7 +27,7 @@
         app:srcCompat="@drawable/shirt1" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/s3"
         android:layout_width="118dp"
         android:layout_height="117dp"
         android:layout_marginBottom="132dp"
@@ -37,7 +37,7 @@
         app:srcCompat="@drawable/shirt3" />
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/s4"
         android:layout_width="118dp"
         android:layout_height="116dp"
         android:layout_marginBottom="132dp"
@@ -47,40 +47,40 @@
         app:srcCompat="@drawable/shirt4" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/sb1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="choose"
-        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintEnd_toStartOf="@+id/sb2"
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+        app:layout_constraintTop_toBottomOf="@+id/s1" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/sb2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="48dp"
         android:layout_marginTop="8dp"
         android:text="choose"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+        app:layout_constraintTop_toBottomOf="@+id/s2" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/sb3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginTop="8dp"
         android:text="choose"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+        app:layout_constraintTop_toBottomOf="@+id/s3" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/sb4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -88,7 +88,7 @@
         android:layout_marginTop="8dp"
         android:text="choose"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.708"
-        app:layout_constraintStart_toEndOf="@+id/button7"
-        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+        app:layout_constraintHorizontal_bias="0.722"
+        app:layout_constraintStart_toEndOf="@+id/sb3"
+        app:layout_constraintTop_toBottomOf="@+id/s4" />
 </android.support.constraint.ConstraintLayout>
