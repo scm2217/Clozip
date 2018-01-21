@@ -8,4 +8,13 @@
     tools:context="cruzhacks2018.clozip.ClozipMenu"
     tools:showIn="@layout/app_bar_clozip_menu">
 
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/screen" />
 </android.support.constraint.ConstraintLayout>
