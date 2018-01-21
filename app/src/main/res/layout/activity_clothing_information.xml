@@ -10,83 +10,115 @@
         android:id="@+id/imageView5"
         android:layout_width="163dp"
         android:layout_height="161dp"
-        app:srcCompat="@drawable/shirt"
-        tools:layout_editor_absoluteX="111dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/shirt" />
 
     <TextView
         android:id="@+id/clothingWeather"
         android:layout_width="130dp"
         android:layout_height="51dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="32dp"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="217dp"
-        tools:layout_editor_absoluteY="397dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/clothingSize"
         android:layout_width="130dp"
         android:layout_height="51dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="32dp"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="217dp"
-        tools:layout_editor_absoluteY="329dp" />
+        app:layout_constraintBottom_toTopOf="@+id/clothingWeather"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/clothingColor"
         android:layout_width="131dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="32dp"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="217dp"
-        tools:layout_editor_absoluteY="263dp" />
+        app:layout_constraintBottom_toTopOf="@+id/clothingSize"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/clothingType"
         android:layout_width="130dp"
         android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="217dp"
-        tools:layout_editor_absoluteY="199dp" />
+        app:layout_constraintBottom_toTopOf="@+id/clothingColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="130dp"
         android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
         android:text="type:"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="198dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="127dp"
         android:layout_height="51dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="28dp"
         android:text="weather:"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="397dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="128dp"
         android:layout_height="51dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="28dp"
         android:text="size:"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="329dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="128dp"
         android:layout_height="52dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="28dp"
         android:text="color:"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="262dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/clothingAccept"
         android:layout_width="50dp"
         android:layout_height="44dp"
-        app:srcCompat="@android:drawable/checkbox_on_background"
-        tools:layout_editor_absoluteX="318dp"
-        tools:layout_editor_absoluteY="459dp" />
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
 </android.support.constraint.ConstraintLayout>
