@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ChooseOutfit" />
-        <activity android:name=".ExistingOutfits"></activity>
+        <activity android:name=".ExistingOutfits" />
+        <activity android:name=".ClothingInformation"></activity>
     </application>
 
 </manifest>

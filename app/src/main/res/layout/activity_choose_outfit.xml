@@ -6,4 +6,36 @@
     android:layout_height="match_parent"
     tools:context="cruzhacks2018.clozip.ChooseOutfit">
 
+    <Button
+        android:id="@+id/shirt"
+        android:layout_width="309dp"
+        android:layout_height="123dp"
+        android:text="shirt"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="194dp" />
+
+    <Button
+        android:id="@+id/pants"
+        android:layout_width="309dp"
+        android:layout_height="123dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="pants"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shirt"
+        app:layout_constraintVertical_bias="0.49"
+        tools:layout_editor_absoluteX="38dp" />
+
+    <Button
+        android:id="@+id/jacket"
+        android:layout_width="309dp"
+        android:layout_height="123dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="jacket"
+        app:layout_constraintBottom_toTopOf="@+id/shirt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.527"
+        tools:layout_editor_absoluteX="38dp" />
+
 </android.support.constraint.ConstraintLayout>
